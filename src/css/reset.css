@@ -1,0 +1,224 @@
+/* ========================================
+            GLOBAL RESET
+========================================= */
+
+
+/* Box Model */
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Remove Default Spacing */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* Smooth Scrolling */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* Body Base */
+
+body {
+
+    min-height: 100vh;
+
+    line-height: 1.5;
+
+    text-rendering: optimizeLegibility;
+
+    font-feature-settings: "liga" 1;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+/* Remove List Style */
+
+ul,
+ol {
+
+    list-style: none;
+
+}
+
+
+
+/* Image Optimization */
+
+img,
+picture,
+video,
+canvas,
+svg {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+
+/* Link Reset */
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+
+/* Button Reset */
+
+button,
+input,
+textarea,
+select {
+
+    font: inherit;
+
+    color: inherit;
+
+}
+
+
+
+/* Button */
+
+button {
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Remove Textarea Resize */
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+
+/* Remove Default Input Outline */
+
+input,
+textarea {
+
+    outline: none;
+
+}
+
+
+
+/* Remove Autofill Background */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+
+    -webkit-text-fill-color: inherit;
+
+    transition:
+        background-color 9999s ease-in-out 0s;
+
+}
+
+
+
+/* Accessibility Focus */
+
+
+:focus-visible {
+
+    outline:
+
+        2px solid var(--secondary);
+
+    outline-offset: 4px;
+
+}
+
+
+
+/* Selection */
+
+
+::selection {
+
+    background: rgba(124, 58, 237, .35);
+
+    color: #fff;
+}
+
+
+
+/* Reduced Motion Support */
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+    *,
+    *::before,
+    *::after {
+
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+
+
+    }
+
+
+}

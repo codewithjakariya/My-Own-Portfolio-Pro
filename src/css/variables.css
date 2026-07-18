@@ -1,0 +1,259 @@
+/* ========================================
+        DESIGN SYSTEM VARIABLES
+======================================== */
+
+:root {
+
+    /* ========================================
+            COLORS
+    ======================================== */
+
+    --bg-primary: #09090B;
+    --bg-secondary: #111827;
+    --bg-tertiary: #1F2937;
+    --bg-card: #18181B;
+    --bg-elevated: #27272A;
+
+    --primary: #7C3AED;
+    --secondary: #06B6D4;
+    --accent: #22C55E;
+
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #EF4444;
+    --info: #3B82F6;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    /* ========================================
+            BORDERS
+    ======================================== */
+
+    --border-color: rgba(255, 255, 255, .08);
+    --border-light: rgba(255, 255, 255, .05);
+    --border-medium: rgba(255, 255, 255, .10);
+    --border-strong: rgba(255, 255, 255, .15);
+    --border-hover: rgba(124, 58, 237, .5);
+
+    /* ========================================
+            GRADIENTS
+    ======================================== */
+
+    --gradient-primary:
+        linear-gradient(135deg, #7C3AED, #06B6D4);
+
+    --gradient-text:
+        linear-gradient(90deg, #7C3AED, #06B6D4);
+
+    --gradient-card:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, .06),
+            rgba(255, 255, 255, .02));
+
+    --gradient-border:
+        linear-gradient(135deg,
+            var(--primary),
+            transparent,
+            var(--secondary));
+
+    --gradient-aurora:
+        radial-gradient(circle,
+            rgba(124, 58, 237, .35),
+            transparent 70%);
+
+    /* ========================================
+            TYPOGRAPHY
+    ======================================== */
+
+    --font-heading: "Sora", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    --fs-xs: .75rem;
+    --fs-sm: .875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 2rem;
+    --fs-4xl: clamp(2rem, 5vw, 3rem);
+    --fs-5xl: clamp(2.5rem, 6vw, 4rem);
+    --fs-6xl: clamp(3rem, 8vw, 5rem);
+
+    --lh-tight: 1.2;
+    --lh-normal: 1.6;
+    --lh-loose: 1.9;
+
+    --tracking-tight: -.02em;
+    --tracking-normal: 0;
+    --tracking-wide: .05em;
+
+    /* ========================================
+            SPACING
+    ======================================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 96px;
+    --space-10: 128px;
+
+    /* ========================================
+            LAYOUT
+    ======================================== */
+
+    --container-width: 1320px;
+    --content-width: 760px;
+
+    --header-height: 80px;
+
+    --section-padding: 120px;
+    --section-padding-mobile: 80px;
+
+    /* ========================================
+            BORDER RADIUS
+    ======================================== */
+
+    --radius-xs: 8px;
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-2xl: 40px;
+    --radius-full: 999px;
+
+    /* ========================================
+            SHADOWS
+    ======================================== */
+
+    --shadow-sm:
+        0 5px 20px rgba(0, 0, 0, .15);
+
+    --shadow-md:
+        0 15px 40px rgba(0, 0, 0, .25);
+
+    --shadow-lg:
+        0 30px 80px rgba(0, 0, 0, .35);
+
+    --shadow-card:
+        0 10px 30px rgba(0, 0, 0, .15);
+
+    --shadow-hover:
+        0 20px 60px rgba(0, 0, 0, .30);
+
+    --shadow-button:
+        0 10px 25px rgba(124, 58, 237, .35);
+
+    --shadow-glow:
+        0 0 40px rgba(124, 58, 237, .35);
+
+    /* ========================================
+            GLASS
+    ======================================== */
+
+    --glass-bg:
+        rgba(255, 255, 255, .05);
+
+    --glass-bg-light:
+        rgba(255, 255, 255, .08);
+
+    --glass-bg-dark:
+        rgba(0, 0, 0, .25);
+
+    --glass-border:
+        rgba(255, 255, 255, .10);
+
+    --glass-blur:
+        blur(20px);
+
+    --blur-sm: 8px;
+    --blur-md: 16px;
+    --blur-lg: 24px;
+
+    /* ========================================
+            TRANSITIONS
+    ======================================== */
+
+    --transition-fast:
+        .2s cubic-bezier(.4, 0, .2, 1);
+
+    --transition-normal:
+        .35s cubic-bezier(.4, 0, .2, 1);
+
+    --transition-slow:
+        .6s cubic-bezier(.4, 0, .2, 1);
+
+    --theme-transition:
+        background-color .3s,
+        color .3s,
+        border-color .3s;
+
+    /* ========================================
+            SCROLLBAR
+    ======================================== */
+
+    --scrollbar-thumb: #7C3AED;
+    --scrollbar-track: #111827;
+
+    /* ========================================
+            TEXT SELECTION
+    ======================================== */
+
+    --selection-bg: #7C3AED;
+    --selection-color: #ffffff;
+
+    /* ========================================
+            Z INDEX
+    ======================================== */
+
+    --z-negative: -1;
+    --z-normal: 1;
+
+    --z-header: 100;
+    --z-dropdown: 300;
+    --z-overlay: 500;
+    --z-modal: 1000;
+    --z-tooltip: 1100;
+    --z-loader: 9999;
+}
+
+
+/* ========================================
+        LIGHT THEME
+======================================== */
+
+body.light-theme {
+
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F1F5F9;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #E5E7EB;
+
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6B7280;
+
+    --border-color: rgba(0, 0, 0, .08);
+    --border-light: rgba(0, 0, 0, .04);
+    --border-medium: rgba(0, 0, 0, .08);
+    --border-strong: rgba(0, 0, 0, .15);
+
+    --glass-bg: rgba(255, 255, 255, .65);
+    --glass-border: rgba(0, 0, 0, .08);
+
+    --scrollbar-track: #E5E7EB;
+}
